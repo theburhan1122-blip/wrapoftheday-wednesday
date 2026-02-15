@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What is McDonald's Wrap of the Day Wednesday UK</title>
+    <style>
+        /* --- CSS Reset & Variables --- */
+        :root {
+            --primary-red: #db0007;
+            --primary-yellow: #ffbc0d;
+            --text-dark: #292929;
+            --text-light: #555555;
+            --bg-light: #f9f9f9;
+            --white: #ffffff;
+            --font-main: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: var(--font-main);
+            color: var(--text-dark);
+            background-color: var(--bg-light);
+            line-height: 1.6;
+        }
+
+        /* --- Header & Navigation --- */
+        header {
+            background-color: var(--white);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 1rem 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--primary-red);
+            text-decoration: none;
+            letter-spacing: -0.5px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo span {
+            color: var(--primary-yellow);
+            margin-right: 5px;
+            font-size: 1.8rem;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 25px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--text-dark);
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: var(--primary-red);
+        }
+
+        /* --- Main Layout --- */
+        main {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 20px;
+            background: var(--white);
+            border-radius: 8px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.03);
+            overflow: hidden;
+        }
+
+        .content-wrapper {
+            padding: 40px;
+        }
+
+        /* --- Typography & Elements --- */
+        h1 {
+            font-size: 2.2rem;
+            color: var(--text-dark);
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+            border-bottom: 4px solid var(--primary-yellow);
+            display: inline-block;
+            padding-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 1.6rem;
+            color: var(--primary-red);
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        h3 {
+            font-size: 1.3rem;
+            color: var(--text-dark);
+            margin-top: 1.8rem;
+            margin-bottom: 0.8rem;
+            font-weight: 700;
+        }
+
+        p {
+            margin-bottom: 1.2rem;
+            color: var(--text-light);
+            font-size: 1.05rem;
+        }
+
+        a {
+            color: var(--primary-red);
+            text-decoration: underline;
+        }
+
+        /* --- Images --- */
+        .blog-image {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin: 20px 0;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+
+        /* --- Tables --- */
+        .table-container {
+            overflow-x: auto;
+            margin: 20px 0;
+            border-radius: 8px;
+            border: 1px solid #eee;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.95rem;
+        }
+
+        thead {
+            background-color: var(--primary-red);
+            color: var(--white);
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #eee;
+        }
+
+        th {
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 0.85rem;
+            letter-spacing: 0.5px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #fafafa;
+        }
+
+        /* --- FAQ Section --- */
+        details {
+            background-color: #fff;
+            border: 1px solid #e0e0e0;
+            border-radius: 6px;
+            margin-bottom: 10px;
+        }
+
+        summary {
+            padding: 15px;
+            cursor: pointer;
+            font-weight: 600;
+            position: relative;
+            background-color: #fdfdfd;
+            list-style: none;
+        }
+
+        summary::after {
+            content: '+';
+            position: absolute;
+            right: 20px;
+            color: var(--primary-red);
+        }
+
+        details[open] summary::after {
+            content: '-';
+        }
+
+        .faq-answer {
+            padding: 15px;
+            color: var(--text-light);
+        }
+
+        /* --- Author Section --- */
+        .author-section {
+            background-color: #fff8f8;
+            border-left: 5px solid var(--primary-red);
+            padding: 30px;
+            margin-top: 60px;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .author-name {
+            font-size: 1.4rem;
+            font-weight: 700;
+            display: block;
+        }
+
+        .author-bio {
+            font-size: 0.95rem;
+            color: var(--text-light);
+            margin: 10px 0;
+        }
+
+        /* --- Footer --- */
+        footer {
+            background-color: #222;
+            color: #fff;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+            <a href="#" class="logo"><span>M</span> FoodGuide UK</a>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#author">Author</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="content-wrapper">
+            
+            <h1>McDonald's Wrap of the Day Wednesday: Calories & Nutritional Guide</h1>
+
+            <p>Do you ever find yourself stuck in the middle of the week feeling hungry and unsure about what to eat for a quick lunch? It is often hard to find a meal that feels tasty yet light enough to keep you going for the rest of the day.</p>
+            
+            <p>Fortunately there is a solution that brings bold flavour and convenience together in one warm tortilla. This deal has become a favourite for many people looking for a satisfying bite without the heaviness of a burger. The mcdonald's <a href="https://en.wikipedia.org/wiki/Snack_Wrap" target="_blank">wrap</a> is a versatile menu staple that has seen many variations over the years.</p>
+
+            <h2>What is the McDonald's Wrap of the Day Wednesday?</h2>
+            <p>For this specific day of the week the offer features The Tikka Chicken One. This wrap is a fantastic choice if you enjoy spices and sweet sauces combined. It comes in two distinct versions to suit your preference. You can choose the Crispy version if you want a crunchy texture or the Grilled version if you are looking for a lighter meal with fewer calories.</p>
+            
+            <p>This wrap features chicken breast combined with tikka mayo and a unique mango and lime chutney. It also includes fresh onions lettuce and cucumber all wrapped in a soft toasted tortilla. It is a flavourful option that stands out on the menu. The mcdonald's wrap of the day wednesday offer makes it an affordable treat for your lunch break.</p>
+
+            <img src="https://s7d1.scene7.com/is/image/mcdonalds/mcdonalds-the-tikka-chicken-one-crispy-Feb-Promo:product-header-desktop?wid=829&hei=455&dpr=off" alt="Crispy Tikka Chicken One" class="blog-image">
+
+            <h2>Nutritional Information: Crispy vs Grilled</h2>
+            <p>Many people ask about the difference in nutrition between the two styles. The Grilled version is lower in fat and calories because it does not have the battered coating. However the Crispy version offers that satisfying crunch that many customers love.</p>
+            
+            <h3>Crispy Tikka Chicken One Nutritional Information</h3>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr><th>Nutritional Component</th><th>Crispy Tikka Wrap</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Energy (kcal)</td><td>471 kcal</td></tr>
+                        <tr><td>Protein</td><td>22g</td></tr>
+                        <tr><td>Fat</td><td>20g</td></tr>
+                        <tr><td>Carbohydrates</td><td>49g</td></tr>
+                        <tr><td>Salt</td><td>2.0g</td></tr>
+                        <tr><td>Saturated Fat</td><td>2.4g</td></tr>
+                        <tr><td>Fibre</td><td>4.1g</td></tr>
+                        <tr><td>Sugars</td><td>4.4g</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h3>Grilled Tikka Chicken One Nutritional Information</h3>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr><th>Nutritional Component</th><th>Grilled Tikka Wrap</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Energy (kcal)</td><td>342 kcal</td></tr>
+                        <tr><td>Protein</td><td>29g</td></tr>
+                        <tr><td>Fat</td><td>7.6g</td></tr>
+                        <tr><td>Carbohydrates</td><td>37g</td></tr>
+                        <tr><td>Salt</td><td>1.5g</td></tr>
+                        <tr><td>Saturated Fat</td><td>1.3g</td></tr>
+                        <tr><td>Fibre</td><td>3.9g</td></tr>
+                        <tr><td>Sugars</td><td>4.7g</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <img src="https://s7d1.scene7.com/is/image/mcdonalds/mcdonalds-the-tikka-chicken-one-grilled-Feb-Promo:product-header-desktop?wid=829&hei=455&dpr=off" alt="Grilled Tikka Chicken One" class="blog-image">
+
+            <h2>Ingredients and Allergen Profile</h2>
+            <p>The main difference in ingredients comes from the chicken preparation. The crispy select involves wheat flour and various spices for the coating while the grilled chicken is much simpler.</p>
+
+            <h3>Key Ingredients</h3>
+            <p><strong>Chicken:</strong> Crispy Select breast or a Grilled breast piece.<br>
+            <strong>Tikka Mayo:</strong> Creamy sauce with tandoori spices.<br>
+            <strong>Mango and Lime Chutney:</strong> Sweet and tangy kick.<br>
+            <strong>Vegetables:</strong> Fresh cucumber lettuce and white onions.<br>
+            <strong>Tortilla:</strong> Soft toasted wheat flour wrap.</p>
+
+            <h2>Price and Availability</h2>
+            <p>You can grab this wrap at almost all McDonald's restaurants across the UK. It is available all day on Wednesday while stocks last. It also returns on Saturday if you miss it during the week.</p>
+
+            <h2>Why Choose This Wrap?</h2>
+            <p>The combination of tikka spices with the cool cucumber and sweet chutney creates a unique taste profile. It is not just spicy but very balanced. If you are planning your meals ahead you might want to look at the <a href="https://wrapofthedaymcdonalds.co.uk/" rel="dofollow">weekly schedule of mcdonald's wrap of the day in UK</a> to see what other flavours are coming up later in the week.</p>
+            
+            <p>Choosing the mcdonald's wrap of the day wednesday is a smart move for a quick lunch. It gives you a good amount of protein and energy to finish your work day strong. If you are counting calories the grilled option is one of the best lower calorie items on the entire menu.</p>
+
+            <h2>People Also Ask (FAQs)</h2>
+            <details>
+                <summary>Is the McDonald's Wednesday wrap spicy?</summary>
+                <div class="faq-answer">The tikka mayo does have some mild spices but it is not very hot. The mango chutney helps balance the spice with sweetness.</div>
+            </details>
+            <details>
+                <summary>How many calories are in the Wednesday wrap?</summary>
+                <div class="faq-answer">The Crispy version contains 471 kcal. The Grilled version is much lighter at 342 kcal.</div>
+            </details>
+            <details>
+                <summary>Is the grilled wrap healthier than the crispy one?</summary>
+                <div class="faq-answer">Yes, the grilled version has less fat and fewer calories. It also has more protein.</div>
+            </details>
+            <details>
+                <summary>Does the Tikka wrap contain nuts?</summary>
+                <div class="faq-answer">There are no nut ingredients, but McDonald's cannot guarantee a completely nut-free kitchen.</div>
+            </details>
+            <details>
+                <summary>Can I order the wrap of the day on delivery?</summary>
+                <div class="faq-answer">You can, but the discounted price might not apply on apps like Uber Eats or Just Eat.</div>
+            </details>
+
+            <!-- Author Section -->
+            <div id="author" class="author-section">
+                <span class="author-name">Jack Monroe</span>
+                <p class="author-bio">Jack Monroe is a prominent British food writer and activist known for campaigning on affordable cooking. Rising to fame with the blog "A Girl Called Jack," Monroe specializes in creating flavourful recipes on a budget.</p>
+                <p><a href="https://en.wikipedia.org/wiki/Jack_Monroe" target="_blank">About Jack Monroe (Wikipedia)</a> | <a href="https://twitter.com/BootstrapCook" target="_blank">@BootstrapCook</a></p>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 FoodGuide UK. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
